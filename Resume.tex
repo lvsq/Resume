@@ -1,95 +1,63 @@
 \documentclass[10pt]{Article}
-\topmargin=-0.5in %length of margin at the top of the page (1 inch added by default)
-\oddsidemargin=-0.25in %length of margin on sides for odd pages
-\evensidemargin=-0.25in %length of margin on sides for even pages
-\textwidth=7.5in %How wide you want your text to be
-\marginparwidth=0.5in
-\headheight=0pt %1in margins at top and bottom (1 inch is added to this value by default)
-\headsep=0pt %Increase this attribute to increase white space in between headers and the top of the page
-\textheight=11in %How tall the text body is allowed to be on each page
-\pagenumbering{gobble}
-\usepackage{enumitem}
-\usepackage[none]{hyphenat}
-\usepackage[margin=0.3in]{geometry}
-\usepackage[compact]{titlesec}
-%\titleformat{command}[shape]{format}{label}{sep}{before-code}[after-code]
-\titleformat*{\section}{\normalsize\bfseries}
-
+\usepackage[margin=0.5in]{geometry} %Changes the page dimensions
+%\usepackage{enumitem} %used for making bulleted lists
+\usepackage[compact]{titlesec} %Needed for "\section" Formatting
+\usepackage[none]{hyphenat} %Disables hyphenation of words.
+\usepackage{tabu} %table package
+\titlespacing*{\section}{0em}{.5em}{.5em} %Needed for "\section" Formatting
+\titlespacing{\paragraph}{0em}{.5em}{.5em}[]
+\pagenumbering{gobble}%removes numbering of pages
 \begin{document}
 \begin{center}
 \centering {\Large \bf Austin Levesque}\\
-\vspace{.5ex}
-56 Old Oregon Rd, Cortlandt Manor, NY 10567
+56 Old Oregon Rd, Cortlandt Manor, NY 10567\\
+Austin.lvsq@gmail.com | (845)-667-2975 |LinkedIn: AustinLevesque
+\line(1,0){540}
 \end{center}
-\noindent{\bf Phone:} (845)-667-2975\hfill{\bf LinkedIn:}
- https://www.linkedin.com/in/austinlvsq/\\
-\noindent{\bf Email:} Austin.lvsq@gmail.com\\
-\line(1,0){570}
-
-\section*{Career Objective}
-\begin{itemize}[topsep=1ex, itemsep=.5ex, parsep=0ex, partopsep=.7ex]
-	\item[]To obtain a full time position where I am able to leverage the skills I
-	 acquired through software engineering and information technology to aid a
-	 team in delivering the highest quality service possible.
-\end{itemize}
-
-\section*{Education}
-\begin{itemize}[topsep=1ex, itemsep=.5ex, parsep=0ex, partopsep=.7ex]
-	\item[]{{\bf Rochester Institute of Technology \hfill Rochester, New York}}
-  \item[] Bachelors of Science in Information Technology. \hfill Graduated May 2017.
-  \item[] Minor: Economics.
-\end{itemize}
-
-\section*{Skills}
-\begin{itemize}[topsep=1ex, itemsep=.5ex, parsep=0ex, partopsep=.7ex]
-	\item[]{\bf Languages:} Java, Javascript, PHP, Swift, SQL, C++, Python, Powershell.
-	\item[]{\bf IT:} Windows Systems Administration, DNS, DHCP, Microsoft System
-	Center Configuration Manager.
-\end{itemize}
-
-\section*{Projects}
-\begin{itemize}[topsep=1ex, itemsep=.5ex, parsep=0ex, partopsep=.7ex]
-	\item[]{\bf Senior Design \& Development Project} (Senior Project, Fall 2016 \& Spring 2017)\\
-	Worked as part of an international team to design, develop, and implement a
-	course assesment tool in PHP, and Java utilizing the Java Spring framework and
-	 Docker containers. I secured and configured a virtual machine for our
-   produciton environment, and confiugred the environment to work with RIT's
-   single sign on solution using SAML.
-	\item[]{\bf NodeJs Vending Machine:} (Computer Science House Major Project, Fall 2016 \& Spring 2017) Continuing Project\\
-	Inherited the remains of a project written in Javascript using the NodeJS
-	framework, and refactored parts of the codebase to enable others to readily
-	continue working on the project.
-	\item[]{\bf Client \& Server Connect Four Implementation} (Concepts of Parallel and Distributed Systems, Fall 2014)\\
-  Developed both the server side and client side of a networked Connect Four game using UDP and TCP in Java over a fifteen week period.
-	\item[]{\bf Monte Catrlo Simulation of Networks:}(Data Communications, Spring 2014)\\
-	Generated models using Monte Carlo simulation in Java to test the energy requirements and network connectivity of small world, scale free, and ad hoc networks over the course of a semester.
-\end{itemize}
-
-\section*{Work Experience}
-\begin{itemize}[topsep=1ex, itemsep=.5ex, parsep=0ex, partopsep=.7ex]
-	\item[]{{\bf Lower Hudson Regional Information Center} \hfill {\bf May 2017 to Current.}}\\
-	BOCES, Managed Information Technology Department \hfill http://www.lhric.org/\\
-	Currently working as part of a team of information technology professionals to offer level 1, and level 2 Support to 30+ school districts in Westchester County, Ny.
-	Participated in projects working with Windows Update Servers, backup management, DNS and DHCP configuration, managing print services, and creating \& deploying desktop images.
-	\item[]{{\bf Lower Hudson Regional Information Center} \hfill {\bf January 2016 to August 2016.}}\\
-	BOCES, Systems and Operations Department \hfill http://www.lhric.org/\\
-	Worked as part of a team offering backup, disaster recovery, email, and web filtering solutions to our clients. Worked with the Commvault backup software, and the Microsoft System Center Configuration Manager management software.
-	\begin{itemize}[topsep=1ex, itemsep=.5ex, parsep=0ex, partopsep=.7ex]
-		\item[]{\bf Intern Project: Imaging Solution}\\
-		The goal of the project was to setup and deploy an instance of the Microsoft System Center Configuration Manager and utilize it to offer a desktop imaging service for our clients.
-	\end{itemize}
-	\item[]{{\bf Lower Hudson Regional Information Center} \hfill {\bf June 2015 to August 2015.}}\\
-	BOCES, Finance Department \hfill http://www.lhric.org/\\
-	Worked with experienced members of the Finance department to maintain the New York
-	State databases to reflect the updated tenure and seniority information for select schools in Westchester County.
-\end{itemize}
-
-\section*{Hobbies}
-\begin{itemize}[topsep=1ex, itemsep=.5ex, parsep=0ex, partopsep=.7ex]
-	\item[]{\bf Juggling}\\
-	I garnered a passion for juggling, and the juggling community, from my time with the RIT Juggling Club. As a former president, I coordinated and supervised one of the longest running regional juggling conventions in the United States, The RIT Juggle-In.
-
-	\item[]{\bf RIT Computer Science House}\\
-	An Active Alumni of the RIT Computer Science House.
-\end{itemize}
+\section*{\large Education}
+{\bf Rochester Institute of Technology} - {\it Rochester, NY}\\
+Bachelors of Science in Information Technology.\\
+Graduated May 2017
+\section*{\large Skills}
+\begin{tabu}{@{}X[4] @{}X[1]}%@{} - remoes left padding
+\bf Information Technology & \bf Languages \\
+Windows Server Administration (2016, 2012 R2) - 2 years & Java - 3 years\\
+Active Directory \& Group Policy - 2 years & SQL - 2 years\\
+Microsoft System Center Configuration Manager - 2 years & Python - 1 year\\
+Commvault Backup Solution - 1 year & Powershell - 1 year\\
+DHCP \& DNS - 1 year & Javascript - 1 year\\
+Office365 Management - \textless 1 year & PHP - \textless 1 year \\
+Google Domain Administration - \textless 1 year & Swift - \textless 1 year
+\end{tabu}
+\section*{\large Experience}
+\paragraph{{\bf Lower Hudson Regional Information Center}}\hfill{\underline {http://www.lhric.org/}~~~}
+\paragraph{\bf Junior Network Specialist} {\it Managed Information Technology Department}\hfill {\bf May 2017 to Current}\\
+A member of a level 2 I.T. team, completing harware and software projects for our clients.\\
+Perform Novell migrations to Office365 and Google domains.\\
+Upgrading 2003, 2008, and 2008 R2 servers to 2016 to maintain compliance with security regulations.
+Configure the desktop user experience for different departments using group policy.
+\paragraph{\bf Intern}{\it Systems \& Operations Department}\hfill{\bf Jan 2016 to Aug 2016}\\
+A member of a team offering disaster recovery, business continuity, and operational services.\\
+Provided VSA and file level backups using Commvault.\\
+Offered content \& web filtering to our clients using Lightspeed.\\
+Distributed and Managed Updates using our downstream on premisie WSUS Server.\\
+Monitored server health using Solarwinds Orion.
+\paragraph{\it {\normalfont Intern Project: Desktop Imaging Solution}}~\\
+Created seconday sites and distribution points in Microsoft System Center Configuration Manager.\\
+Deployed Windows OS images \& Application Packages using Microsoft System Center Configuration Manager.
+\paragraph{\bf Intern}{\it Finance Department}\hfill{\bf Jun 2015 to Aug 2015}\\
+Transformed personnel data for an application migration from Finance Manager to Nvision.
+\section*{\large Projects}
+\paragraph{\bf Senior Design \& Development Project}\hfill{\bf Fall 2016 \& Spring 2017}\\
+Technology: Java, Java Spring, PHP, Docker\\
+Worked as part of an international team to design, develop, and implement a course assesment tool in PHP, and Java utilizing the Java Spring framework and Docker containers. Secured and configured a virtual machine for our produciton environment, and configured the environment to work with RIT's single sign on solution using SAML.
+\paragraph{\bf NodeJs Vending Machine}\hfill{\bf Fall 2016 \& Spring 2017}\\
+Computer Science House Major Project, Continuing Project\\
+Technology: Javasript, Node.js\\
+Inherited the remains of a project written in Javascript using the NodeJS framework, and refactored parts of the codebase to enable others to readily continue working on the project.
+\section*{\large Interests \& Activities}
+\paragraph{\bf RIT Juggling Club}{\it President}~\\
+Developed leadership and interpersonnel skills required to manage a team of 20, and run a regional juggling convention.
+\paragraph{\bf RIT Computer Science House}~\\
+An active alumni of a community dedicated to bettering themselves through personal projects. Lend experince and technical help to community members as they work on new and interesting problems.
 \end{document}
